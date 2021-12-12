@@ -45,7 +45,7 @@ const Market = () => {
 		<div class="amount-box text-center">
 			<img src="https://lh3.googleusercontent.com/ohLHGNvMvQjOcmRpL4rjS3YQlcpO0D_80jJpJ-QA7-fQln9p3n7BAnqu3mxQ6kI4Sw" alt="wallet"></img>
 			<p>Total Balance</p>
-			<p class="amount" >100,000$</p>
+			<p class="amount" >{u.coins-u.coins2}$</p>
 		</div>
 
 		<div class="btn-group text-center">
