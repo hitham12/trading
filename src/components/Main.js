@@ -76,7 +76,7 @@ const Main = () => {
                     // resultsCount ? <DataDate resultsCount={resultsCount} dateInput={dateInput} /> : ''
                 } 
         </Route >
-        <Route path="/Market">
+        <Route path="/market">
                 {
                     <Market />
                     // resultsCount ? <DataDate resultsCount={resultsCount} dateInput={dateInput} /> : ''

@@ -16,7 +16,7 @@ const Login = () => {
   const passwordRef = useRef();
 
   useEffect(() => {
-    axios.get("https://tradingback3112.herokuapp.com/trading/api").then((res) => {
+    axios.get("http://localhost:4001/trading/api").then((res) => {
       setAllUsers(res.data);
     });
   }, []);
