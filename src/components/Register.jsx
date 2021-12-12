@@ -15,7 +15,7 @@ const Register = () => {
     useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:4001/trading/api").then((res) => {
+    axios.get("https://tradingback3112.herokuapp.com/trading/api").then((res) => {
       setUsers(res.data);
     });
   }, []);
@@ -33,7 +33,7 @@ const Register = () => {
           password: password
         };
         axios
-          .post(`http://localhost:4001/trading/api/newuser`, x)
+          .post(`https://tradingback3112.herokuapp.com/trading/api/newuser`, x)
           .then((res) => {
             if (res.status === 200) {
                 setPasswordErrorMessage('suucessfully')

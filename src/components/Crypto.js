@@ -27,7 +27,7 @@ function App() {
 		});
 	}
 	const yy = () => {
-		Axios.get("http://localhost:4001/trading/api").then((res) => {
+		Axios.get("https://tradingback3112.herokuapp.com/trading/api").then((res) => {
 			setUsers(res.data);
 		});
 	}
@@ -38,7 +38,7 @@ function App() {
 			const coinn = {
 				coins2: (coin.price)
 			}
-			axios.put(`http://localhost:4001/trading/api/pricecoins2/${users[0]._id}`, coinn)
+			axios.put(`https://tradingback3112.herokuapp.com/trading/api/pricecoins2/${users[0]._id}`, coinn)
 				.then((res) => {
 					if (res.status === 200) {
 						alert("done")

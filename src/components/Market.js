@@ -8,7 +8,7 @@ const Market = () => {
     const [user, setUser] = React.useState(null);
 
     React.useEffect(() => {
-        axios.get("http://localhost:4001/trading/api").then((res) => {
+        axios.get("https://tradingback3112.herokuapp.com/trading/api").then((res) => {
             setUser(res.data);
             
         });
